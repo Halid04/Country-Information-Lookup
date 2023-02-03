@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Information Lookup</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="body" class="flex justify-center items-center h-screen text-black text-xl">
+    <img src="image/worldImage.jpeg" alt="" class="absolute z-0 bg-cover bg-no-repeat bg-center w-screen h-screen">
+    <div class="flex flex-col gap-[30px]  items-center rounded-3xl shadow-[10px_10px_10px_rgba(0,0,0,1)] z-10 shadow-black bg-[#ffffff49] w-4/12 h-5/6 backdrop-blur">
+        <form action="#"  class="flex justify-center items-center gap-3 mt-[3rem]">
+            <input id="countryInput" type="text" placeholder="search contry.." class="border-2 border-white bg-[#ffffff79] rounded-2xl w-[100%] h-[3rem] placeholder:text-[#00000071] text-xl shadow-[5px_5px_10px_rgba(0,0,0,1)]">
+            <button id="searchBtn" class="w-10 aspect-square transition duration-300 hover:scale-90 active:scale-100">
+                <img src="image/Search icon.png" >
+            </button>
+        </form>
+        <h1 id="welcomeText" class="text-5xl text-center text-[#00000069] mt-[4rem]">Country Information Lookup</h1>
+        <h1 id="countryName" class="hidden text-5xl text-center"></h1>
+        <img id="flag" src="" class="hidden w-[20rem] h-[12rem]">
+        <div id="countryInformations" class="hidden flex flex-row justify-center items-center gap-5 text-[20px]">
+            <p id="capital"></p>
+            <p id="population"></p>
+            <p id="area"></p>
+            <p id="region"></p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
